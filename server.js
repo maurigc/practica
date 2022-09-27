@@ -15,10 +15,6 @@ app.get("/", (req, res) => {
 })
 
 
-io.on("connection", (socket) => {
-    console.log("Nuevo cliente conectado.")
-})
-
 
 // Puerto 
 const PORT = 8080;
