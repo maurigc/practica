@@ -7,10 +7,33 @@
     <title>Socket.io</title>
 
     <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>socket</h1>
+    <div class="contenedor-principal">
+        <h1 class="titulo-principal">tru<span class="chat">chat</span>so</h1>
 
+        <div id="contenedorMensajes">
+        
+        </div>
+
+        <form class="form" onsubmit="return agregarMensaje()">
+            <label class="nombre" for="usuario">Nombre:</label>
+            <input type="text" name="usuario" id="usuario">
+
+            <div>
+                <input type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje...">
+            
+                <button class="button-form" type="submit">Enviar</button>
+            </div>
+            
+            
+            
+        </form>
+    </div>
+    
+
+    
     <script src="index.js"></script>
 </body>
 </html>
